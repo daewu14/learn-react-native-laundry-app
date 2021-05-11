@@ -8,17 +8,19 @@ import {
   Image
 } from 'react-native'
 import { ImgBerandaHeader, Logo } from "../../assets";
+import { Saldo } from "../../components";
 
 const Home = () => {
     return (
         <View style={styles.page}>
-            <ImageBackground source={ImgBerandaHeader} style={styles.header}>
-              <Image source={Logo} style={styles.logo}/>
-              <View style={styles.hello}>
-                <Text style={styles.welcome}>Selamat datang,</Text>
-                <Text style={styles.userName}>Daewu bintara</Text>
-              </View>
-            </ImageBackground>
+          <ImageBackground source={ImgBerandaHeader} style={styles.header}>
+            <Image source={Logo} style={styles.logo}/>
+            <View style={styles.hello}>
+              <Text style={styles.welcome}>Selamat datang,</Text>
+              <Text style={styles.userName}>Daewu bintara</Text>
+            </View>
+          </ImageBackground>
+          <Saldo/>
         </View>
     )
 }
