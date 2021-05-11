@@ -13,7 +13,7 @@ import {
 } from 'react-native'
 import { AccentColor } from "../../utils/constant";
 
-const ButtonIcon = ({ Icon, title }) => {
+const ButtonIcon = ({ icon: Icon, title }) => {
     return (
         <TouchableOpacity>
           <View style={styles.icon}>
