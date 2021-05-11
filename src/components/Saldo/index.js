@@ -32,12 +32,12 @@ const Saldo = () => {
           <View style={styles.buttonAction}>
             <ButtonIcon
               title={'Add Saldo'}
-              icon={IcOutcome}
+              icon={IcBill}
             />
             <Space width={10}/>
             <ButtonIcon
               title={'Get Point'}
-              icon={IcBill}
+              icon={IcOutcome}
             />
           </View>
         </View>
