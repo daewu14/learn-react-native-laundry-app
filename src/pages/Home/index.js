@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   header: {
     width: windowWidth,
     aspectRatio: 1.75,
-    paddingHorizontal: 10,
+    paddingHorizontal: 20,
     paddingTop: 10
   },
   logo: {
