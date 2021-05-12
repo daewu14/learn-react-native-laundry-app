@@ -6,8 +6,14 @@
 
 import BottomNavigation from './BottomNavigation'
 import Saldo from './Saldo'
+import ButtonIcon from './ButtonIcon';
+import Space from "./Space";
+import LayananKami from "./LayananKami";
 
 export {
   BottomNavigation,
-  Saldo
+  Saldo,
+  ButtonIcon,
+  Space,
+  LayananKami
 }

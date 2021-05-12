@@ -8,7 +8,10 @@ import {
   Image
 } from 'react-native'
 import { ImgBerandaHeader, Logo } from "../../assets";
-import { Saldo } from "../../components";
+import {
+  Saldo,
+  LayananKami
+} from "../../components";
 
 const Home = () => {
     return (
@@ -21,6 +24,7 @@ const Home = () => {
             </View>
           </ImageBackground>
           <Saldo/>
+          <LayananKami/>
         </View>
     )
 }

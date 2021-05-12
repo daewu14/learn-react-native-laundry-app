@@ -13,8 +13,10 @@ import {
 import { WindowSize } from "../../utils/window";
 import { PrimaryColor } from "../../utils/constant";
 import { IcBill, IcOutcome } from "../../assets";
-import ButtonIcon from "../ButtonIcon";
-import Space from "../Space";
+import {
+  ButtonIcon,
+  Space
+} from "../index";
 
 const Saldo = () => {
     return (
