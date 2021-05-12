@@ -12,6 +12,12 @@ import IcCharWoman from './ic_charwoman.svg'
 import IcCharWomanActive from './ic_charwoman_active.svg'
 import IcOutcome from './ic_outcome.svg'
 import IcBill from './ic_bill.svg'
+import IcTimbangan from './ic_timbangan.svg'
+import IcLaundry from './ic_laundry.svg'
+import IcIron from './ic_iron.svg'
+import IcDeliveryTruck from './ic_delivery_truck.svg'
+import IcDress from './ic_dress.svg'
+import IcCleanClothes from './ic_clean_clothes.svg'
 
 export {
   IcHome,
@@ -21,5 +27,11 @@ export {
   IcCharWoman,
   IcCharWomanActive,
   IcOutcome,
-  IcBill
+  IcBill,
+  IcTimbangan,
+  IcLaundry,
+  IcIron,
+  IcDeliveryTruck,
+  IcDress,
+  IcCleanClothes
 }
