@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
   text: (isFocused) => ({
     fontSize: 13,
     color: isFocused ? PrimaryColor : DissabledColor,
-    marginTop: 8
+    fontFamily: 'TitilliumWeb-Regular',
+    marginTop: 3
   })
 })
