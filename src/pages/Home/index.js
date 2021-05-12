@@ -10,23 +10,33 @@ import {
 import { ImgBerandaHeader, Logo } from "../../assets";
 import {
   Saldo,
-  LayananKami
+  LayananKami,
+  PesananAktif,
 } from "../../components";
+import { ColorGrey } from "../../utils/constant";
+import { ScrollView } from "react-native-gesture-handler";
 
 const Home = () => {
-    return (
-        <View style={styles.page}>
-          <ImageBackground source={ImgBerandaHeader} style={styles.header}>
-            <Image source={Logo} style={styles.logo}/>
-            <View style={styles.hello}>
-              <Text style={styles.welcome}>Selamat datang,</Text>
-              <Text style={styles.userName}>Daewu bintara</Text>
-            </View>
-          </ImageBackground>
-          <Saldo/>
-          <LayananKami/>
+  return (
+    <View style={styles.page}>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <ImageBackground source={ImgBerandaHeader} style={styles.header}>
+          <Image source={Logo} style={styles.logo}/>
+          <View style={styles.hello}>
+            <Text style={styles.welcome}>Selamat datang,</Text>
+            <Text style={styles.userName}>Daewu bintara</Text>
+          </View>
+        </ImageBackground>
+        <Saldo/>
+        <Text style={styles.label}>Layanan Kami</Text>
+        <LayananKami/>
+        <View style={styles.activeOrder}>
+          <Text style={styles.label}>Pesanan Aktif</Text>
+          <PesananAktif/>
         </View>
-    )
+      </ScrollView>
+    </View>
+  )
 }
 
 export default Home
@@ -36,12 +46,13 @@ const windowHeight = Dimensions.get('window').height
 
 const styles = StyleSheet.create({
   page: {
-    flex: 1
+    flex: 1,
+    backgroundColor: 'white'
   },
   header: {
     width: windowWidth,
     aspectRatio: 1.75,
-    paddingHorizontal: 20,
+    paddingHorizontal: 30,
     paddingTop: 10
   },
   logo: {
@@ -49,7 +60,7 @@ const styles = StyleSheet.create({
     height: windowHeight * 0.06
   },
   hello: {
-    marginTop: windowHeight * 0.06
+    marginTop: windowHeight * 0.04
   },
   welcome: {
     fontSize: 24,
@@ -59,4 +70,15 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontFamily: 'TitilliumWeb-Bold'
   },
+  label: {
+    fontSize: 18,
+    fontFamily: 'TitilliumWeb-Bold',
+    marginHorizontal: 30,
+    marginTop: 15
+  },
+  activeOrder: {
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    backgroundColor: ColorGrey
+  }
 })

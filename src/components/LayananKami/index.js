@@ -33,7 +33,6 @@ const LayananKami = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Layanan Kami</Text>
       <View style={styles.iconLayanan}>
         <ThisButtonIcon
           icon={IcTimbangan}
@@ -69,7 +68,6 @@ export default LayananKami
 const styles = StyleSheet.create({
   container: {
     paddingLeft: 30,
-    paddingTop: 15,
   },
   label: {
     fontSize: 18,

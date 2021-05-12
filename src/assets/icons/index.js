@@ -18,6 +18,7 @@ import IcIron from './ic_iron.svg'
 import IcDeliveryTruck from './ic_delivery_truck.svg'
 import IcDress from './ic_dress.svg'
 import IcCleanClothes from './ic_clean_clothes.svg'
+import IcWashingMachine from './ic_washing_machine.svg'
 
 export {
   IcHome,
@@ -33,5 +34,6 @@ export {
   IcIron,
   IcDeliveryTruck,
   IcDress,
-  IcCleanClothes
+  IcCleanClothes,
+  IcWashingMachine
 }
